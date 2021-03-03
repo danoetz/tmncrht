@@ -14,7 +14,12 @@ class SmileyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Image.asset(assetPath, width: 24, fit: BoxFit.contain),
+      child: Image.asset(
+        assetPath,
+        width: 38,
+        height: 38,
+        fit: BoxFit.contain,
+      ),
     );
   }
 }

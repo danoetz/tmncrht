@@ -1,15 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:temancurhat/data/models/agent.dart';
 import 'package:temancurhat/shared/widgets/widgets.dart';
-import 'package:temancurhat/shared/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:temancurhat/data/api/api_constant.dart';
 import 'package:temancurhat/data/models/movies.dart';
 import 'package:temancurhat/shared/styles/styles.dart';
-import 'package:temancurhat/shared/widgets/widgets.dart';
-import 'package:temancurhat/shared/widgets/widgets.dart';
 import 'package:temancurhat/ui/agent/agent_screen.dart';
 import 'package:temancurhat/ui/beranda/bloc/beranda_bloc.dart';
 
@@ -402,16 +399,12 @@ class _BerandaScreenState extends State<BerandaScreen> {
                   ),
                 ),
                 Container(
-                  height: 60,
+                  height: 72,
                   width: width,
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 30.0, vertical: 0.0),
-                  child: GridView.count(
-                    crossAxisCount: 7,
-                    mainAxisSpacing: 10,
-                    childAspectRatio: 3 / 2,
-                    children: _smiley,
-                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 30.0),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: _smiley),
                 ),
               ],
             ),
